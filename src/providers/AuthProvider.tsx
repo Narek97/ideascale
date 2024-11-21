@@ -2,19 +2,19 @@
 import {
   createContext,
   createRef,
-  FC,
   ReactNode,
   useCallback,
   useContext,
   useImperativeHandle,
 } from 'react';
 
+import { useGetMe } from '@/react-query/user';
 import { ACCESS_TOKEN, REFRESH_TOKEN, WORKSPACE_URL } from '@/utils/constants';
 import { UserType } from '@/utils/ts/types/user';
 
 import useLocalStorageValue from '../hooks/useLocalStorageValue';
 
-interface AuthState {
+export interface AuthState {
   isLoggedIn: boolean;
   user?: UserType;
   logout: () => void;
@@ -26,10 +26,6 @@ interface AuthState {
 const AuthContext = createContext({} as AuthState);
 export const useAuthState = () => useContext(AuthContext);
 
-interface Props {
-  children?: ReactNode;
-}
-
 export const authRef = createRef<
   Pick<AuthState, 'setAccessToken' | 'setRefreshToken' | 'setWorkspaceUrl'> & {
     accessToken: string | null;
@@ -38,7 +34,7 @@ export const authRef = createRef<
   }
 >();
 
-const AuthProvider: FC<Props> = ({ children }) => {
+const AuthProvider = ({ children }: { children: ReactNode }) => {
   const {
     item: accessToken,
     setItem: setAccessToken,
@@ -64,8 +60,7 @@ const AuthProvider: FC<Props> = ({ children }) => {
     workspaceUrl,
   }));
 
-  // const { data } = useGetMe(!!accessToken);
-  const data = undefined;
+  const { data } = useGetMe(!!accessToken);
 
   const logout = useCallback(() => {
     removeAccessToken();

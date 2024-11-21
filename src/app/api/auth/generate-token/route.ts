@@ -33,11 +33,20 @@ export async function GET(req: Request) {
 
     // Return the response data as JSON
     return NextResponse.json(response.data);
-  } catch (error) {
+  } catch (error: unknown) {
     console.error('Error fetching access token:', error);
 
+    // Safely handle error using type guard
+    if (axios.isAxiosError(error)) {
+      return NextResponse.json(
+        { error: 'Failed to fetch access token', details: error.response?.data || error.message },
+        { status: error.response?.status || 500 },
+      );
+    }
+
+    // Handle non-Axios errors
     return NextResponse.json(
-      { error: 'Failed to fetch access token', details: error.message },
+      { error: 'An unexpected error occurred', details: String(error) },
       { status: 500 },
     );
   }

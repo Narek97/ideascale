@@ -5,10 +5,13 @@ import React from 'react';
 import { Button } from '@fluentui/react-button';
 import * as microsoftTeams from '@microsoft/teams-js';
 
+import { useStyles } from '@/app/(guest)/login/style';
 import { useAuthState } from '@/providers/AuthProvider';
 
 const Login = () => {
   const { setAccessToken, setRefreshToken, setWorkspaceUrl } = useAuthState();
+
+  const classes = useStyles();
 
   const Login = () => {
     microsoftTeams.authentication
@@ -23,10 +26,11 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className={classes.login}>
       Login
-      <button onClick={Login}>Click</button>
-      <Button appearance="primary">Login</Button>
+      <Button appearance="primary" onClick={Login}>
+        Login
+      </Button>
     </div>
   );
 };

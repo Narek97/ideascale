@@ -14,7 +14,7 @@ const TeamsProvider = ({ children }: { children: ReactNode }) => {
       .then(() => {
         microsoftTeams.app
           .getContext()
-          .then(ctx => setContext(ctx as string))
+          .then(ctx => setContext(JSON.stringify(ctx)))
           .catch(err => setError(`Error getting context: ${err.message}`));
       })
       .catch(err => setError(`Error initializing Teams app: ${err.message}`));

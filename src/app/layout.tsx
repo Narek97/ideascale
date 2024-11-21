@@ -1,5 +1,7 @@
 import { ReactNode } from 'react';
 
+import './style.css';
+
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 
@@ -34,6 +36,7 @@ export default function RootLayout({
       lang="en"
       style={{
         background: 'white',
+        minHeight: '100dvh',
       }}>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <TeamsProvider>
