@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.15/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.15",
+  "version": "1.0.0",
+  "id": "77262e03-12f0-43d3-8d49-047073bcbef2",
+  "packageName": "com.microsoft.teams.extension",
+  "developer": {
+    "name": "Teams App, Inc.",
+    "websiteUrl": "https://a717-130-193-123-98.ngrok-free.app",
+    "privacyUrl": "https://a717-130-193-123-98.ngrok-free.app/privacy",
+    "termsOfUseUrl": "https://a717-130-193-123-98.ngrok-free.app/termsofuse"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "IdeaScale-Teams",
+    "full": "IdeaScale Teams app"
+  },
+  "description": {
+    "short": "Short description of ideascale-teams-app",
+    "full": "Full description of ideascale-teams-app"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [],
+  "composeExtensions": [],
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "campaign",
+      "name": "Campaign",
+      "contentUrl": "https://a717-130-193-123-98.ngrok-free.app/campaign",
+      "websiteUrl": "https://a717-130-193-123-98.ngrok-free.app",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "idealist",
+      "name": "Idealist",
+      "contentUrl": "https://a717-130-193-123-98.ngrok-free.app/idealist",
+      "websiteUrl": "https://a717-130-193-123-98.ngrok-free.app",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "profile",
+      "name": "Profile",
+      "contentUrl": "https://a717-130-193-123-98.ngrok-free.app/profile",
+      "websiteUrl": "https://a717-130-193-123-98.ngrok-free.app",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "settings",
+      "name": "Settings",
+      "contentUrl": "https://a717-130-193-123-98.ngrok-free.app/settings",
+      "websiteUrl": "https://a717-130-193-123-98.ngrok-free.app",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["5cfa-74-217-129-200.ngrok-free.app"],
+  "webApplicationInfo": {
+    "id": "446a05e7-2ffe-43e8-9a6d-5d302e5697d0",
+    "resource": "api://5cfa-74-217-129-200.ngrok-free.app/446a05e7-2ffe-43e8-9a6d-5d302e5697d0"
+  }
+}
