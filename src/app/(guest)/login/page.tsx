@@ -2,11 +2,13 @@
 
 import React from 'react';
 
-import { Button } from '@fluentui/react-button';
+import { Button, Text } from '@fluentui/react-components';
 import * as microsoftTeams from '@microsoft/teams-js';
 
 import { useStyles } from '@/app/(guest)/login/style';
 import { useAuthState } from '@/providers/AuthProvider';
+
+import IdeaScaleIcon from '@/public/idea-scale.svg';
 
 const Login = () => {
   const { setAccessToken, setRefreshToken, setWorkspaceUrl } = useAuthState();
@@ -26,12 +28,17 @@ const Login = () => {
   };
 
   return (
-    <div className={classes.login}>
-      Login
-      <Button appearance="primary" onClick={Login}>
-        Login
-      </Button>
-    </div>
+    <section className={classes.login}>
+      <div className={classes.loginCard}>
+        <Text className={classes.title}>Connect Your Workspace</Text>
+        <Button appearance="primary" onClick={Login}>
+          Visit Workspace
+        </Button>
+      </div>
+
+      <IdeaScaleIcon className={classes.leftTop} />
+      <IdeaScaleIcon width="296px" height="295px" className={classes.rightBottom} />
+    </section>
   );
 };
 

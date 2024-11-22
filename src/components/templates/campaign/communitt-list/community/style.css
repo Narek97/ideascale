@@ -1,0 +1,35 @@
+.community-header {
+  display: flex;
+  justify-content: space-between;
+}
+.community-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+.community-button {
+  all: unset;
+  cursor: pointer;
+  height: fit-content;
+}
+.community-button-collapsed {
+  transform: rotate(180deg);
+}
+.community-ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+  margin-bottom: 24px;
+}
+.community-ul-collapsed {
+  height: 336px;
+  overflow: hidden;
+}
+.community-item {
+  cursor: pointer;
+}
+.community-loading-item {
+  width: 374px;
+  height: 326px;
+  margin-bottom: 16px;
+}

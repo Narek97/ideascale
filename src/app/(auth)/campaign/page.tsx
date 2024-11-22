@@ -1,18 +1,13 @@
-'use client';
 import React from 'react';
+import './style.css';
 
-import { Button } from '@fluentui/react-button';
-
-import { useAuthState } from '@/providers/AuthProvider';
+import CommunityList from '@/components/templates/campaign/communitt-list';
 
 const Campaign = () => {
-  const { logout } = useAuthState();
-
   return (
-    <div>
-      Campaign
-      <Button onClick={logout}>Logout</Button>
-    </div>
+    <section className={'campaign'}>
+      <CommunityList />
+    </section>
   );
 };
 

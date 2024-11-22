@@ -3,6 +3,8 @@ import React, { ReactNode, useEffect, useState } from 'react';
 
 import * as microsoftTeams from '@microsoft/teams-js';
 
+import IdeaScaleIcon from '@/public/idea-scale.svg';
+
 const TeamsProvider = ({ children }: { children: ReactNode }) => {
   const [context, setContext] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -25,7 +27,17 @@ const TeamsProvider = ({ children }: { children: ReactNode }) => {
   }
 
   if (!context) {
-    return <div>Loading...</div>;
+    return (
+      <div
+        style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+        }}>
+        <IdeaScaleIcon fill={'#5F5F5F'} />
+      </div>
+    );
   }
 
   return <>{children}</>;

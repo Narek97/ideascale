@@ -1,7 +1,7 @@
 import React from 'react';
 
 const IdeaList = () => {
-  return <div>idealist</div>;
+  return <section>idealist</section>;
 };
 
 export default IdeaList;
