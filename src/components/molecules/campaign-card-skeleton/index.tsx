@@ -3,7 +3,7 @@ import * as React from 'react';
 import { makeStyles, Skeleton as MySkeleton, SkeletonItem } from '@fluentui/react-components';
 import type { SkeletonProps } from '@fluentui/react-components';
 
-const Skeleton = (props: Partial<SkeletonProps>) => {
+const CampaignCardSkeleton = (props: Partial<SkeletonProps>) => {
   const classes = useStyles();
   return (
     <MySkeleton {...props} className={classes.card} aria-label="Loading Content">
@@ -29,4 +29,4 @@ const useStyles = makeStyles({
   },
 });
 
-export default Skeleton;
+export default CampaignCardSkeleton;

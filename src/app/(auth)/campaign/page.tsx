@@ -1,14 +1,14 @@
 import React from 'react';
+
 import './style.css';
+import CommunityList from '@/components/templates/community/communitt-list';
 
-import CommunityList from '@/components/templates/campaign/communitt-list';
-
-const Campaign = () => {
+const CampaignPage = () => {
   return (
-    <section className={'campaign'}>
+    <section className={'community'}>
       <CommunityList />
     </section>
   );
 };
 
-export default Campaign;
+export default CampaignPage;

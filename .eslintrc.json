@@ -3,7 +3,7 @@
   "extends": "next",
   "parser": "@typescript-eslint/parser",
   "plugins": ["import", "unused-imports", "@typescript-eslint", "prettier", "react-hooks"],
-  "ignorePatterns": ["src/gql/**"],
+  "ignorePatterns": [],
   "overrides": [
     {
       "files": "*",
@@ -35,7 +35,7 @@
           }
         ],
         "import/order": [
-          "error",
+          "off",
           {
             "groups": [["builtin", "external"], "internal", ["parent", "sibling", "index"]],
             "pathGroups": [

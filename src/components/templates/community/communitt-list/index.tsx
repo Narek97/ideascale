@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 
-import Community from '@/components/templates/campaign/communitt-list/community';
+import Community from '@/components/templates/community/communitt-list/community';
 import { useAuthState } from '@/providers/AuthProvider';
 
 const CommunityList = () => {

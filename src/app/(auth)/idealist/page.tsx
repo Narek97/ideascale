@@ -1,7 +1,12 @@
 import React from 'react';
+import Ideas from '@/components/templates/ideas';
 
-const IdeaList = () => {
-  return <section>idealist</section>;
+const IdeaListPage = () => {
+  return (
+    <section>
+      <Ideas />
+    </section>
+  );
 };
 
-export default IdeaList;
+export default IdeaListPage;

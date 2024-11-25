@@ -10,7 +10,7 @@ import { useAuthState } from '@/providers/AuthProvider';
 
 import IdeaScaleIcon from '@/public/idea-scale.svg';
 
-const Login = () => {
+const LoginPage = () => {
   const { setAccessToken, setRefreshToken, setWorkspaceUrl } = useAuthState();
 
   const classes = useStyles();
@@ -42,4 +42,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginPage;

@@ -24,7 +24,7 @@ export async function GET(req: Request) {
         params: {
           grant_type: 'authorization_code',
           code,
-          redirect_uri: `https://a717-130-193-123-98.ngrok-free.app/auth/callback`,
+          redirect_uri: `https://0183-130-193-123-98.ngrok-free.app/auth/callback`,
           client_id: `b0a59801-0a04-446e-9837-b812ce5d73b8`,
           client_secret: '8923c98b-2dfc-4c29-b4b0-183670994be3',
         },

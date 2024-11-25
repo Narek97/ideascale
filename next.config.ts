@@ -29,7 +29,7 @@ const nextConfig: NextConfig = {
     }
 
     // Grab the existing rule that handles SVG imports
-    const fileLoaderRule = config.module.rules.find(rule => rule.test?.test?.('.svg'));
+    const fileLoaderRule = config.module.rules.find((rule: any) => rule.test?.test?.('.svg'));
 
     // Add new rules for SVG imports
     config.module.rules.push(

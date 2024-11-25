@@ -2,7 +2,7 @@ import React from 'react';
 
 import LogOut from '@/components/templates/settings';
 
-const Settings = () => {
+const SettingsPage = () => {
   return (
     <section>
       <LogOut />
@@ -10,4 +10,4 @@ const Settings = () => {
   );
 };
 
-export default Settings;
+export default SettingsPage;

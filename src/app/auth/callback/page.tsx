@@ -15,7 +15,7 @@ const Page = () => {
       microsoftTeams.app.getContext().then(async () => {
         if (code) {
           await fetch(
-            `https://a717-130-193-123-98.ngrok-free.app/api/auth/generate-token?code=${code}`,
+            `https://0183-130-193-123-98.ngrok-free.app/api/auth/generate-token?code=${code}`,
           )
             .then(res => res.json())
             .then(data => {

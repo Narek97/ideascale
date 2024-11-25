@@ -6,9 +6,9 @@
   "packageName": "com.microsoft.teams.extension",
   "developer": {
     "name": "Teams App, Inc.",
-    "websiteUrl": "https://a717-130-193-123-98.ngrok-free.app",
-    "privacyUrl": "https://a717-130-193-123-98.ngrok-free.app/privacy",
-    "termsOfUseUrl": "https://a717-130-193-123-98.ngrok-free.app/termsofuse"
+    "websiteUrl": "https://0183-130-193-123-98.ngrok-free.app",
+    "privacyUrl": "https://0183-130-193-123-98.ngrok-free.app/privacy",
+    "termsOfUseUrl": "https://0183-130-193-123-98.ngrok-free.app/termsofuse"
   },
   "icons": {
     "color": "color.png",
@@ -30,8 +30,8 @@
     {
       "entityId": "campaign",
       "name": "Campaign",
-      "contentUrl": "https://a717-130-193-123-98.ngrok-free.app/campaign",
-      "websiteUrl": "https://a717-130-193-123-98.ngrok-free.app",
+      "contentUrl": "https://0183-130-193-123-98.ngrok-free.app/campaign",
+      "websiteUrl": "https://0183-130-193-123-98.ngrok-free.app",
       "scopes": [
         "personal"
       ]
@@ -39,8 +39,8 @@
     {
       "entityId": "idealist",
       "name": "Idealist",
-      "contentUrl": "https://a717-130-193-123-98.ngrok-free.app/idealist",
-      "websiteUrl": "https://a717-130-193-123-98.ngrok-free.app",
+      "contentUrl": "https://0183-130-193-123-98.ngrok-free.app/idealist",
+      "websiteUrl": "https://0183-130-193-123-98.ngrok-free.app",
       "scopes": [
         "personal"
       ]
@@ -48,8 +48,8 @@
     {
       "entityId": "profile",
       "name": "Profile",
-      "contentUrl": "https://a717-130-193-123-98.ngrok-free.app/profile",
-      "websiteUrl": "https://a717-130-193-123-98.ngrok-free.app",
+      "contentUrl": "https://0183-130-193-123-98.ngrok-free.app/profile",
+      "websiteUrl": "https://0183-130-193-123-98.ngrok-free.app",
       "scopes": [
         "personal"
       ]
@@ -57,8 +57,8 @@
     {
       "entityId": "settings",
       "name": "Settings",
-      "contentUrl": "https://a717-130-193-123-98.ngrok-free.app/settings",
-      "websiteUrl": "https://a717-130-193-123-98.ngrok-free.app",
+      "contentUrl": "https://0183-130-193-123-98.ngrok-free.app/settings",
+      "websiteUrl": "https://0183-130-193-123-98.ngrok-free.app",
       "scopes": [
         "personal"
       ]

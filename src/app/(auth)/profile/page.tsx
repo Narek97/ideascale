@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Profile = () => {
-  return <section>Profile</section>;
+const ProfilePage = () => {
+  return <section>ProfilePage</section>;
 };
 
-export default Profile;
+export default ProfilePage;

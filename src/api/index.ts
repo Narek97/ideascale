@@ -3,7 +3,7 @@ import axios from 'axios';
 import { authRef } from '@/providers/AuthProvider';
 
 export const $apiClient = axios.create({
-  baseURL: 'https://a717-130-193-123-98.ngrok-free.app/api',
+  baseURL: 'https://0183-130-193-123-98.ngrok-free.app/api',
 });
 
 $apiClient.interceptors.request.use(
